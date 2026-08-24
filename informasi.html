@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Informasi - JAGAME</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="informasi.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="page">
+        
+        <!-- Background Overlay (opsional jika ingin efek gelap seperti panduan) -->
+        <div class="overlay"></div>
+
+        <!-- ================================= -->
+        <!-- HEADER -->
+        <!-- ================================= -->
+        <header class="header">
+            <button class="back-btn" id="backButton" aria-label="Kembali ke halaman utama">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <h1>Informasi</h1> 
+        </header>
+
+        <!-- Logo JAGAME (Opsional, ditaruh di atas konten jika ingin tetap ditampilkan) -->
+        <section class="logo-area">
+            <img src="assets/logo.png" alt="Logo JAGAME" class="jagame-logo">
+        </section>
+
+        <!-- ================================= -->
+        <!-- CONTENT -->
+        <!-- ================================= -->
+        <main class="content">
+
+            <!-- CARD PENDANAAN -->
+            <section class="info-card funding-card">
+                <div class="card-label">
+                    <span>DIDANAI OLEH</span>
+                </div>
+
+                <div class="upn-logo-wrapper">
+                    <img src="assets/logoupn.png" alt="Logo UPN Veteran Yogyakarta" class="upn-logo">
+                </div>
+
+                <h2>LPPM</h2>
+                <p class="institution">
+                    UPN “Veteran” Yogyakarta
+                </p>
+
+                <div class="card-line"></div>
+            </section>
+
+            <!-- CARD PENGEMBANG -->
+            <section class="info-card developer-card">
+                <div class="card-label">
+                    <span>PENGEMBANG</span>
+                </div>
+
+                <div class="developer-content">
+                    <h2>Nafila Khoirunnisa</h2>
+                    <p class="major">
+                        Teknik Geomatika
+                    </p>
+                    <p class="university">
+                        UPN “Veteran” Yogyakarta
+                    </p>
+
+                    <button class="linkedin-button" id="linkedinButton">
+                        <span class="linkedin-logo">in</span>
+                        <span>LinkedIn</span>
+                    </button>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- ================================= -->
+        <!-- FOOTER -->
+        <!-- ================================= -->
+        <footer class="footer">
+            <p>
+                © 2026 JAGAME. All Rights Reserved.
+            </p>
+        </footer>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="informasi.js"></script>
+
+</body>
+</html>
