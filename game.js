@@ -1826,6 +1826,93 @@ async function saveCompletedMission(){
     await saveProgress(progress);
 
 }
+/*==========================================================
+        BOTTOM SHEET - PARTIAL COLLAPSE (FIXED PERSENTASE SISA)
+==========================================================*/
+const bottomSheetEl = document.getElementById("bottomSheet");
+const sheetBarEl = bottomSheetEl.querySelector(".sheet-bar");
+
+let sheetStartY = 0;
+let sheetCurrentY = 0;
+let isSheetDragging = false;
+let isCollapsed = false; 
+
+bottomSheetEl.addEventListener("touchstart", (e) => {
+    sheetStartY = e.touches[0].clientY;
+    isSheetDragging = true;
+    bottomSheetEl.style.transition = "none";
+}, { passive: true });
+
+bottomSheetEl.addEventListener("touchmove", (e) => {
+    if (!isSheetDragging) return;
+    sheetCurrentY = e.touches[0].clientY;
+    let diffY = sheetCurrentY - sheetStartY;
+
+    // Hitung tinggi panel secara dinamis supaya batasnya akurat
+    let panelHeight = bottomSheetEl.offsetHeight;
+    // Batas turun maksimal adalah tinggi panel dikurangi sisa yang ingin ditampilkan (misal sisa 130px)
+    let maxTranslate = panelHeight - 130; 
+    if (maxTranslate < 100) maxTranslate = 150; // Pengaman minimal
+
+    if (isCollapsed) {
+        diffY = diffY - maxTranslate;
+    }
+
+    // Jangan biarkan ditarik ke atas melebihi 0
+    if (diffY < 0) diffY = 0;
+    
+    // Jangan biarkan turun melebihi batas maxTranslate (supaya tidak hilang bablas)
+    if (diffY > maxTranslate) diffY = maxTranslate;
+
+    bottomSheetEl.style.transform = `translateY(${diffY}px)`;
+}, { passive: true });
+
+bottomSheetEl.addEventListener("touchend", () => {
+    if (!isSheetDragging) return;
+    isSheetDragging = false;
+    bottomSheetEl.style.transition = "transform 0.3s cubic-bezier(0.25, 1, 0.5, 1)";
+
+    let diffY = sheetCurrentY - sheetStartY;
+    let panelHeight = bottomSheetEl.offsetHeight;
+    let maxTranslate = panelHeight - 130;
+    if (maxTranslate < 100) maxTranslate = 150;
+
+    // Jika ditarik ke bawah melewati 50px, kunci di posisi sisa (collapsed)
+    if (!isCollapsed && diffY > 50) {
+        bottomSheetEl.style.transform = `translateY(${maxTranslate}px)`;
+        isCollapsed = true;
+    } else if (isCollapsed && diffY < -50) {
+        // Naikkan lagi full ke atas
+        bottomSheetEl.style.transform = "translateY(0)";
+        isCollapsed = false;
+    } else {
+        // Kembalikan ke posisi terakhir
+        if (isCollapsed) {
+            bottomSheetEl.style.transform = `translateY(${maxTranslate}px)`;
+        } else {
+            bottomSheetEl.style.transform = "translateY(0)";
+        }
+    }
+    
+    sheetStartY = 0;
+    sheetCurrentY = 0;
+});
+
+// Klik pada garis bar (handle) untuk toggle naik-turun otomatis
+sheetBarEl.addEventListener("click", () => {
+    bottomSheetEl.style.transition = "transform 0.3s cubic-bezier(0.25, 1, 0.5, 1)";
+    let panelHeight = bottomSheetEl.offsetHeight;
+    let maxTranslate = panelHeight - 130;
+    if (maxTranslate < 100) maxTranslate = 150;
+
+    if (isCollapsed) {
+        bottomSheetEl.style.transform = "translateY(0)";
+        isCollapsed = false;
+    } else {
+        bottomSheetEl.style.transform = `translateY(${maxTranslate}px)`;
+        isCollapsed = true;
+    }
+});
 
 /*==========================================================
             PART 9 - RESTORE COMPLETED MARKER
