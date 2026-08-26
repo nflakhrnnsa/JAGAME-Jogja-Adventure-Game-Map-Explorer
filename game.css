@@ -62,7 +62,7 @@ body{
 
     border-radius:28px;
 
-    overflow:auto;
+    overflow:hidden;
 
     box-shadow:
     0 0 30px rgba(0,0,0,.45);
@@ -525,6 +525,10 @@ body{
     0 -8px 25px rgba(0,0,0,.25);
      border-top:
     2px solid rgba(244,200,107,.4);
+    /* === TAMBAHKAN INI === */
+    transform: translateY(0);
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    touch-action: none; /* Mencegah layar ikut scroll/zoom saat panel ditarik */
 
 }
 /* ==================================================
@@ -573,19 +577,11 @@ from{
 
     opacity:0;
 
-    transform:
-
-    translateY(15px);
-
 }
 
 to{
 
     opacity:1;
-
-    transform:
-
-    translateY(0);
 
 }
 
