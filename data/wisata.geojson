@@ -1,558 +1,679 @@
 {
-"type": "FeatureCollection",
-"name": "25wisata",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
+  "type": "FeatureCollection",
+  "name": "29wisata",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
     {
-  "type": "Feature",
-  "properties": {
-    "id": 1,
-    "nama": "Pasar Legi Kotagede",
-    "kategori": "kuliner",
-    "reward": 20,
-    "question": "Makanan tradisional yang paling terkenal dijual di kawasan Pasar Legi Kotagede adalah...",
-    "option1": "Gudeg",
-    "option2": "Kipo",
-    "option3": "Bakpia",
-    "option4": "Geplak",
-    "correct": "Kipo"
-  },
-  "geometry": {
-    "type": "Point",
-    "coordinates": [
-      110.3998727299089,
-      -7.828344417997479
-    ]
-  }
-},
-{
-  "type": "Feature",
-  "properties": {
-    "id": 2,
-    "nama": "Masjid Gedhe Mataram Kotagede",
-    "kategori": "religi",
-    "reward": 20,
-    "question": "Masjid Gedhe Mataram merupakan peninggalan dari kerajaan...",
-    "option1": "Majapahit",
-    "option2": "Mataram Islam",
-    "option3": "Demak",
-    "option4": "Pajajaran",
-    "correct": "Mataram Islam"
-  },
-  "geometry": {
-    "type": "Point",
-    "coordinates": [
-      110.39833824540604,
-      -7.829417652363476
-    ]
-  }
-},
-{
-  "type": "Feature",
-  "properties": {
-    "id": 3,
-    "nama": "Kompleks Makam Raja-Raja Mataram",
-    "kategori": "heritage",
-    "reward": 20,
-    "question": "Kompleks makam ini merupakan tempat dimakamkannya tokoh penting Kerajaan...",
-    "option1": "Sriwijaya",
-    "option2": "Mataram Islam",
-    "option3": "Kutai",
-    "option4": "Singasari",
-    "correct": "Mataram Islam"
-  },
-  "geometry": {
-    "type": "Point",
-    "coordinates": [
-      110.39775443053703,
-      -7.829305283179143
-    ]
-  }
-},
-{
-  "type": "Feature",
-  "properties": {
-    "id": 4,
-    "nama": "Sendang Seliran",
-    "kategori": "heritage",
-    "reward": 20,
-    "question": "Dalam budaya Jawa, sendang biasanya dimanfaatkan sebagai...",
-    "option1": "Tempat pertunjukan",
-    "option2": "Sumber air",
-    "option3": "Pasar",
-    "option4": "Benteng",
-    "correct": "Sumber air"
-  },
-  "geometry": {
-    "type": "Point",
-    "coordinates": [
-      110.3976916796719,
-      -7.829917460112245
-    ]
-  }
-},
-{
-  "type": "Feature",
-  "properties": {
-    "id": 5,
-    "nama": "Watu Gilang",
-    "kategori": "heritage",
-    "reward": 20,
-    "question": "Watu Gilang dipercaya berkaitan dengan sejarah berdirinya Kerajaan...",
-    "option1": "Mataram Islam",
-    "option2": "Kediri",
-    "option3": "Majapahit",
-    "option4": "Tarumanegara",
-    "correct": "Mataram Islam"
-  },
-  "geometry": {
-    "type": "Point",
-    "coordinates": [
-      110.39915641019573,
-      -7.832126061072127
-    ]
-  }
-},
-{
-  "type": "Feature",
-  "properties": {
-    "id": 6,
-    "nama": "Omah UGM Kotagede",
-    "kategori": "heritage",
-    "reward": 20,
-    "question": "Bangunan Omah UGM Kotagede saat ini banyak dimanfaatkan sebagai...",
-    "option1": "Pusat pembelajaran dan pelestarian budaya",
-    "option2": "Terminal",
-    "option3": "Hotel",
-    "option4": "Rumah sakit",
-    "correct": "Pusat pembelajaran dan pelestarian budaya"
-  },
-  "geometry": {
-    "type": "Point",
-    "coordinates": [
-      110.39562581357237,
-      -7.829308445246213
-    ]
-  }
-},
-{
-  "type": "Feature",
-  "properties": {
-    "id": 7,
-    "nama": "Museum Kotagede",
-    "kategori": "heritage",
-    "reward": 20,
-    "question": "Museum Kotagede didirikan untuk melestarikan...",
-    "option1": "Budaya dan sejarah Kotagede",
-    "option2": "Satwa liar",
-    "option3": "Teknologi modern",
-    "option4": "Olahraga tradisional",
-    "correct": "Budaya dan sejarah Kotagede"
-  },
-  "geometry": {
-    "type": "Point",
-    "coordinates": [
-      110.39217187984264,
-      -7.826341852622928
-    ]
-  }
-},
-{
-  "type": "Feature",
-  "properties": {
-    "id": 8,
-    "nama": "Langgar Dhuwur Jagalan",
-    "kategori": "religi",
-    "reward": 20,
-    "question": "Ciri khas Langgar Dhuwur adalah bangunannya yang berada di...",
-    "option1": "Bawah tanah",
-    "option2": "Atas rumah",
-    "option3": "Dalam gua",
-    "option4": "Tepi sungai",
-    "correct": "Atas rumah"
-  },
-  "geometry": {
-    "type": "Point",
-    "coordinates": [
-      110.39653109746445,
-      -7.828422929604244
-    ]
-  }
-},
-{
-  "type": "Feature",
-  "properties": {
-    "id": 9,
-    "nama": "Kedai Kipo Bu Djito",
-    "kategori": "kuliner",
-    "reward": 20,
-    "question": "Kipo merupakan makanan khas Kotagede yang dibungkus menggunakan...",
-    "option1": "Daun pisang",
-    "option2": "Daun jati",
-    "option3": "Kertas",
-    "option4": "Plastik",
-    "correct": "Daun pisang"
-  },
-  "geometry": {
-    "type": "Point",
-    "coordinates": [
-      110.39636492730705,
-      -7.827305642347179
-    ]
-  }
-},
-{
-  "type": "Feature",
-  "properties": {
-    "id": 10,
-    "nama": "Sentra Kerajinan Perak HS Silver",
-    "kategori": "heritage",
-    "reward": 20,
-    "question": "Kotagede sejak dahulu terkenal sebagai sentra kerajinan...",
-    "option1": "Perak",
-    "option2": "Emas",
-    "option3": "Bambu",
-    "option4": "Rotan",
-    "correct": "Perak"
-  },
-  "geometry": {
-    "type": "Point",
-    "coordinates": [
-      110.39479463433896,
-      -7.826972390120612
-    ]
-  }
-},
-{
-  "type": "Feature",
-  "properties": {
-    "id": 11,
-    "nama": "Sentra Perak Ansor Silver",
-    "kategori": "heritage",
-    "reward": 20,
-    "question": "Produk kerajinan yang paling terkenal dari kawasan ini adalah...",
-    "option1": "Perhiasan perak",
-    "option2": "Keramik",
-    "option3": "Ukiran batu",
-    "option4": "Wayang kulit",
-    "correct": "Perhiasan perak"
-  },
-  "geometry": {
-    "type": "Point",
-    "coordinates": [
-      110.39266470258178,
-      -7.826609922670437
-    ]
-  }
-},
-{
-  "type": "Feature",
-  "properties": {
-    "id": 12,
-    "nama": "Gang Soka",
-    "kategori": "heritage",
-    "reward": 20,
-    "question": "Gang-gang sempit di Kotagede dibuat seperti ini karena...",
-    "option1": "Merupakan bagian dari permukiman tradisional",
-    "option2": "Jalan tol lama",
-    "option3": "Bekas rel kereta",
-    "option4": "Tempat parkir",
-    "correct": "Merupakan bagian dari permukiman tradisional"
-  },
-  "geometry": {
-    "type": "Point",
-    "coordinates": [
-      110.39637108486794,
-      -7.8295164037667
-    ]
-  }
-},
-{
-  "type": "Feature",
-  "properties": {
-    "id": 13,
-    "nama": "Masjid Perak Kotagede",
-    "kategori": "religi",
-    "reward": 20,
-    "question": "Masjid Perak dikenal karena memiliki...",
-    "option1": "Ornamen bernuansa kerajinan perak",
-    "option2": "Menara tertinggi di Indonesia",
-    "option3": "Kolam renang",
-    "option4": "Jembatan kaca",
-    "correct": "Ornamen bernuansa kerajinan perak"
-  },
-  "geometry": {
-    "type": "Point",
-    "coordinates": [
-      110.39768031472619,
-      -7.8270070947114805
-    ]
-  }
-},
-{
-  "type": "Feature",
-  "properties": {
-    "id": 14,
-    "nama": "Kotagede Heritage Library",
-    "kategori": "heritage",
-    "reward": 20,
-    "question": "Fungsi utama Heritage Library adalah...",
-    "option1": "Menyimpan dan mengenalkan sejarah Kotagede",
-    "option2": "Pusat olahraga",
-    "option3": "Terminal bus",
-    "option4": "Pasar tradisional",
-    "correct": "Menyimpan dan mengenalkan sejarah Kotagede"
-  },
-  "geometry": {
-    "type": "Point",
-    "coordinates": [
-      110.39936878118435,
-      -7.827075847785128
-    ]
-  }
-},
-{
-  "type": "Feature",
-  "properties": {
-    "id": 15,
-    "nama": "Sendang Kemuning",
-    "kategori": "heritage",
-    "reward": 20,
-    "question": "Dalam bahasa Jawa, 'sendang' berarti...",
-    "option1": "Mata air",
-    "option2": "Jembatan",
-    "option3": "Bukit",
-    "option4": "Sawah",
-    "correct": "Mata air"
-  },
-  "geometry": {
-    "type": "Point",
-    "coordinates": [
-      110.3974482566581,
-      -7.829217541540672
-    ]
-  }
-},
-{
-  "type": "Feature",
-  "properties": {
-    "id": 16,
-    "nama": "Makam Panembahan Senopati",
-    "kategori": "heritage",
-    "reward": 20,
-    "question": "Panembahan Senopati dikenal sebagai...",
-    "option1": "Pendiri Kesultanan Mataram",
-    "option2": "Raja Majapahit",
-    "option3": "Gubernur Yogyakarta",
-    "option4": "Pendiri VOC",
-    "correct": "Pendiri Kesultanan Mataram"
-  },
-  "geometry": {
-    "type": "Point",
-    "coordinates": [
-      110.39775443053703,
-      -7.829305283179143
-    ]
-  }
-},
-{
-  "type": "Feature",
-  "properties": {
-    "id": 17,
-    "nama": "Base Artisan Kotagede",
-    "kategori": "heritage",
-    "reward": 20,
-    "question": "Tempat ini menjadi wadah bagi para...",
-    "option1": "Pengrajin lokal",
-    "option2": "Nelayan",
-    "option3": "Petani",
-    "option4": "Supir bus",
-    "correct": "Pengrajin lokal"
-  },
-  "geometry": {
-    "type": "Point",
-    "coordinates": [
-      110.39635568578026,
-      -7.828921530451095
-    ]
-  }
-},
-{
-  "type": "Feature",
-  "properties": {
-    "id": 18,
-    "nama": "Lawang Ijo",
-    "kategori": "heritage",
-    "reward": 20,
-    "question": "Nama 'Lawang Ijo' berasal dari...",
-    "option1": "Pintu berwarna hijau",
-    "option2": "Atap hijau",
-    "option3": "Pohon hijau",
-    "option4": "Sungai hijau",
-    "correct": "Pintu berwarna hijau"
-  },
-  "geometry": {
-    "type": "Point",
-    "coordinates": [
-      110.39649827052084,
-      -7.827934111210774
-    ]
-  }
-},
-{
-  "type": "Feature",
-  "properties": {
-    "id": 19,
-    "nama": "Batik Pletot",
-    "kategori": "heritage",
-    "reward": 20,
-    "question": "Di lokasi ini pengunjung dapat mengikuti kegiatan...",
-    "option1": "Membatik",
-    "option2": "Menyelam",
-    "option3": "Memancing",
-    "option4": "Bermain golf",
-    "correct": "Membatik"
-  },
-  "geometry": {
-    "type": "Point",
-    "coordinates": [
-      110.39543775433413,
-      -7.826369765701877
-    ]
-  }
-},
-{
-  "type": "Feature",
-  "properties": {
-    "id": 20,
-    "nama": "Taman Legawong",
-    "kategori": "heritage",
-    "reward": 20,
-    "question": "Taman Legawong merupakan ruang...",
-    "option1": "Terbuka untuk masyarakat",
-    "option2": "Parkir bus",
-    "option3": "Bandara",
-    "option4": "Pelabuhan",
-    "correct": "Terbuka untuk masyarakat"
-  },
-  "geometry": {
-    "type": "Point",
-    "coordinates": [
-      110.39368694484341,
-      -7.824341899334226
-    ]
-  }
-},
-{
-  "type": "Feature",
-  "properties": {
-    "id": 21,
-    "nama": "Langgar Dhuwur Boharen",
-    "kategori": "religi",
-    "reward": 20,
-    "question": "Langgar Dhuwur Boharen merupakan bangunan yang digunakan untuk...",
-    "option1": "Beribadah",
-    "option2": "Berdagang",
-    "option3": "Menyimpan hasil panen",
-    "option4": "Pertunjukan seni",
-    "correct": "Beribadah"
-  },
-  "geometry": {
-    "type": "Point",
-    "coordinates": [
-      110.40142737066239,
-      -7.82929232317192
-    ]
-  }
-},
-{
-  "type": "Feature",
-  "properties": {
-    "id": 22,
-    "nama": "Toegoe Patjak Soedji",
-    "kategori": "heritage",
-    "reward": 20,
-    "question": "Tugu ini menjadi salah satu penanda kawasan...",
-    "option1": "Kotagede",
-    "option2": "Malioboro",
-    "option3": "Kraton",
-    "option4": "Tugu Yogyakarta",
-    "correct": "Kotagede"
-  },
-  "geometry": {
-    "type": "Point",
-    "coordinates": [
-      110.40021555506745,
-      -7.827883756596477
-    ]
-  }
-},
-{
-  "type": "Feature",
-  "properties": {
-    "id": 23,
-    "nama": "Peni Kotagede Swalayan",
-    "kategori": "kuliner",
-    "reward": 20,
-    "question": "Di kawasan Kotagede, wisatawan sering membeli oleh-oleh berupa...",
-    "option1": "Kipo",
-    "option2": "Gudeg Kaleng",
-    "option3": "Bakpia Pathok",
-    "option4": "Wingko Babat",
-    "correct": "Kipo"
-  },
-  "geometry": {
-    "type": "Point",
-    "coordinates": [
-      110.39936944424795,
-      -7.828088804175014
-    ]
-  }
-},
-{
-  "type": "Feature",
-  "properties": {
-    "id": 24,
-    "nama": "Foto Baju Adat Kotagede Nareswara",
-    "kategori": "heritage",
-    "reward": 20,
-    "question": "Tempat ini menawarkan pengalaman...",
-    "option1": "Berfoto dengan busana adat Jawa",
-    "option2": "Membuat keris",
-    "option3": "Belajar membatik",
-    "option4": "Menonton wayang",
-    "correct": "Berfoto dengan busana adat Jawa"
-  },
-  "geometry": {
-    "type": "Point",
-    "coordinates": [
-      110.39869556467177,
-      -7.8295241471415284
-    ]
-  }
-},
-{
-  "type": "Feature",
-  "properties": {
-    "id": 25,
-    "nama": "Kampung Wisata Prenggan",
-    "kategori": "heritage",
-    "reward": 20,
-    "question": "Kampung Wisata Prenggan dikenal sebagai kawasan yang masih mempertahankan...",
-    "option1": "Budaya dan arsitektur tradisional",
-    "option2": "Gedung pencakar langit",
-    "option3": "Pusat industri modern",
-    "option4": "Bandara internasional",
-    "correct": "Budaya dan arsitektur tradisional"
-  },
-  "geometry": {
-    "type": "Point",
-    "coordinates": [
-      110.39182791423893,
-      -7.826490436087059
-    ]
-  }
-}
-
-    ]
+      "type": "Feature",
+      "properties": {
+        "id": 1,
+        "nama": "Pasar Legi Kotagede",
+        "kategori": "kuliner",
+        "narasi": "Pasar Legi Kotagede merupakan salah satu pasar tua di Yogyakarta yang telah berkembang sejak masa Mataram Islam. Pasar ini menjadi pusat perekonomian masyarakat dan merupakan bagian dari tata kota Catur Gatra Tunggal, bersama keraton, masjid, dan alun-alun. Nama “Legi” muncul karena aktivitas jual beli meningkat pada hari Legi dalam penanggalan Jawa. Pada masa perkembangannya, pasar ini juga menjadi tempat bertemunya berbagai pedagang dan komoditas seperti gerabah, perak, tekstil, dan logam.",
+        "reward": 20,
+        "question": "Mengapa Pasar Kotagede kemudian dikenal dengan nama Pasar Legi…",
+        "option1": "Karena pasar hanya buka pada hari Legi",
+        "option2": "Karena transaksi jual beli meningkat pada hari Legi",
+        "option3": "Karena pasar dibangun oleh masyarakat dari daerah Legi",
+        "option4": "Karena pasar berada di sebelah timur Keraton",
+        "correct": "Karena transaksi jual beli meningkat pada hari Legi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3998727299089,
+          -7.828344417997479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2,
+        "nama": "Masjid Gedhe Mataram Kotagede",
+        "kategori": "religi",
+        "narasi": "Masjid Gedhe Mataram Kotagede merupakan masjid kuno yang berada dekat kompleks makam pendiri Kerajaan Mataram Islam dan Sendang Seliran. Masjid ini memiliki arsitektur tradisional Jawa dengan atap tajug bersusun tiga pada ruang utama dan atap limasan pada serambi. Di dalamnya terdapat empat tiang sokoguru, mihrab, mimbar, pawestren, bedug, dan kentongan. Masjid ini telah beberapa kali mengalami perbaikan untuk menjaga kelestariannya.",
+        "reward": 20,
+        "question": "Apa jenis atap yang digunakan pada ruang utama Masjid Gedhe Mataram Kotagede…",
+        "option1": "Limasan",
+        "option2": "Joglo",
+        "option3": "Tajug bersusun tiga",
+        "option4": "Kampung",
+        "correct": "Tajug bersusun tiga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.398338245406,
+          -7.829417652363476
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3,
+        "nama": "Makam Raja-Raja Kotagede",
+        "kategori": "heritage",
+        "narasi": "Makam Raja-Raja Kotagede berada di kawasan yang dahulu merupakan rumah dan halaman tempat tinggal Ki Ageng Pemanahan bersama keluarga dan kerabatnya. Sebelum wafat, Ki Ageng Pemanahan berpesan kepada putranya, Danang Sutawijaya, agar dimakamkan di halaman rumah tersebut. Kompleks ini kemudian menjadi tempat pemakaman Ki Ageng Pemanahan beserta keluarga dan tokoh-tokoh penting Mataram, seperti Panembahan Senapati, Ki Ageng Juru Martani, dan Panembahan Hanyakrawati.",
+        "reward": 20,
+        "question": "Siapakah putra Ki Ageng Pemanahan yang menerima pesan untuk memakamkannya di halaman rumah…",
+        "option1": "Ki Ageng Juru Martani",
+        "option2": "Danang Sutawijaya",
+        "option3": "Panembahan Hanyakrawati",
+        "option4": "Pangeran Jayaprana",
+        "correct": "Danang Sutawijaya"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.397754430537,
+          -7.829305283179143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4,
+        "nama": "Sendang Seliran",
+        "kategori": "heritage",
+        "narasi": "Sendang Seliran merupakan pemandian yang berada dalam satu kompleks dengan Masjid Gedhe Mataram Kotagede. Pada awalnya, sendang ini digunakan sebagai sarana untuk menyucikan diri sebelum beribadah ke masjid dan juga digunakan oleh keluarga Panembahan Senopati. Nama Seliran berasal dari kata salira dalam bahasa Jawa yang berarti pribadi. Sendang ini terbagi menjadi dua kolam, yaitu Sendang Kakung untuk laki-laki dan Sendang Estri untuk perempuan. Sendang Seliran berada di bagian selatan kompleks makam Raja-Raja Kotagede.",
+        "reward": 20,
+        "question": "Apa nama sendang yang diperuntukkan bagi perempuan di kompleks Sendang Seliran…",
+        "option1": "Sendang Kakung",
+        "option2": "Sendang Agung",
+        "option3": "Sendang Estri",
+        "option4": "Sendang Salira",
+        "correct": "Sendang Estri"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3976916796719,
+          -7.829917460112245
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 5,
+        "nama": "Watu Gilang",
+        "kategori": "heritage",
+        "narasi": "",
+        "reward": 20,
+        "question": "Watu Gilang dipercaya berkaitan dengan sejarah berdirinya Kerajaan...",
+        "option1": "Mataram Islam",
+        "option2": "Kediri",
+        "option3": "Majapahit",
+        "option4": "Tarumanegara",
+        "correct": "Mataram Islam"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3991564101957,
+          -7.832126061072127
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 6,
+        "nama": "Omah UGM Kotagede",
+        "kategori": "heritage",
+        "narasi": "",
+        "reward": 20,
+        "question": "Bangunan Omah UGM Kotagede saat ini banyak dimanfaatkan sebagai...",
+        "option1": "Pusat pembelajaran dan pelestarian budaya",
+        "option2": "Terminal",
+        "option3": "Hotel",
+        "option4": "Rumah sakit",
+        "correct": "Pusat pembelajaran dan pelestarian budaya"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3956258135724,
+          -7.829308445246213
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7,
+        "nama": "Museum Kotagede",
+        "kategori": "heritage",
+        "narasi": "",
+        "reward": 20,
+        "question": "Museum Kotagede didirikan untuk melestarikan...",
+        "option1": "Budaya dan sejarah Kotagede",
+        "option2": "Satwa liar",
+        "option3": "Teknologi modern",
+        "option4": "Olahraga tradisional",
+        "correct": "Budaya dan sejarah Kotagede"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3921718798426,
+          -7.826341852622928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 8,
+        "nama": "Langgar Dhuwur Jagalan",
+        "kategori": "religi",
+        "narasi": "",
+        "reward": 20,
+        "question": "Ciri khas Langgar Dhuwur adalah bangunannya yang berada di...",
+        "option1": "Bawah tanah",
+        "option2": "Atas rumah",
+        "option3": "Dalam gua",
+        "option4": "Tepi sungai",
+        "correct": "Atas rumah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3965310974644,
+          -7.828422929604244
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 9,
+        "nama": "Kedai Kipo Bu Djito",
+        "kategori": "kuliner",
+        "narasi": "",
+        "reward": 20,
+        "question": "Kipo merupakan makanan khas Kotagede yang dibungkus menggunakan...",
+        "option1": "Daun pisang",
+        "option2": "Daun jati",
+        "option3": "Kertas",
+        "option4": "Plastik",
+        "correct": "Daun pisang"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.396364927307,
+          -7.827305642347179
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 10,
+        "nama": "Sentra Kerajinan Perak HS Silver",
+        "kategori": "heritage",
+        "narasi": "",
+        "reward": 20,
+        "question": "Kotagede sejak dahulu terkenal sebagai sentra kerajinan...",
+        "option1": "Perak",
+        "option2": "Emas",
+        "option3": "Bambu",
+        "option4": "Rotan",
+        "correct": "Perak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.394794634339,
+          -7.826972390120612
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11,
+        "nama": "Sentra Perak Ansor Silver",
+        "kategori": "heritage",
+        "narasi": "",
+        "reward": 20,
+        "question": "Produk kerajinan yang paling terkenal dari kawasan ini adalah...",
+        "option1": "Perhiasan perak",
+        "option2": "Keramik",
+        "option3": "Ukiran batu",
+        "option4": "Wayang kulit",
+        "correct": "Perhiasan perak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3926647025818,
+          -7.826609922670437
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12,
+        "nama": "Gang Soka",
+        "kategori": "heritage",
+        "narasi": "Gang Soka merupakan lorong permukiman tua di kawasan Jagalan, Kotagede. Meskipun berupa jalan yang sempit dengan rumah-rumah di kanan dan kirinya, gang ini menyimpan bagian dari sejarah perkembangan Kotagede. Nama Soka berasal dari pohon soka yang dahulu tumbuh di kawasan tersebut. Pohon dengan bunga yang indah itu menjadi salah satu penanda lingkungan, sehingga namanya kemudian digunakan sebagai nama gang. Gang Soka juga memperlihatkan keberadaan rumah-rumah tradisional dan bangunan lama yang masih berdampingan dengan kehidupan masyarakat hingga saat ini.",
+        "reward": 20,
+        "question": "Dari mana asal nama \"Gang Soka\" berasal…",
+        "option1": "Nama seorang tokoh masyarakat",
+        "option2": "Nama sebuah bangunan kuno",
+        "option3": "Nama pohon soka yang dahulu tumbuh di kawasan tersebut",
+        "option4": "Nama kerajaan yang pernah berkuasa di Kotagede",
+        "correct": "Nama pohon soka yang dahulu tumbuh di kawasan tersebut"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.396368136884,
+          -7.82953136980449
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13,
+        "nama": "Masjid Perak Kotagede",
+        "kategori": "religi",
+        "narasi": "",
+        "reward": 20,
+        "question": "Masjid Perak dikenal karena memiliki...",
+        "option1": "Ornamen bernuansa kerajinan perak",
+        "option2": "Menara tertinggi di Indonesia",
+        "option3": "Kolam renang",
+        "option4": "Jembatan kaca",
+        "correct": "Ornamen bernuansa kerajinan perak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3976803147262,
+          -7.82700709471148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 14,
+        "nama": "Kotagede Heritage Library",
+        "kategori": "heritage",
+        "narasi": "",
+        "reward": 20,
+        "question": "Fungsi utama Heritage Library adalah...",
+        "option1": "Menyimpan dan mengenalkan sejarah Kotagede",
+        "option2": "Pusat olahraga",
+        "option3": "Terminal bus",
+        "option4": "Pasar tradisional",
+        "correct": "Menyimpan dan mengenalkan sejarah Kotagede"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3993687811844,
+          -7.827075847785128
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 15,
+        "nama": "Sendang Kemuning",
+        "kategori": "heritage",
+        "narasi": "Sumber Kemuning berkaitan dengan Panembahan Senopati dan Sunan Kalijaga. Saat Panembahan Senopati sedang bersemedi di Alas Mentaok, Sunan Kalijaga datang dan ingin minum, tetapi tidak menemukan sumber air. Ia kemudian menusukkan cis (tombak pendek) ke tanah. Dari bekas tusukan tersebut dipercaya muncul mata air yang kemudian dikenal sebagai Sumber Kemuning.",
+        "reward": 20,
+        "question": "siapa yang menusukkan cis ke tanah hingga muncul mata air Sumber Kemuning…",
+        "option1": "Sunan Kalijaga",
+        "option2": "Ki Ageng Pemanahan",
+        "option3": "Sultan Agung",
+        "option4": "Panembahan Senopati",
+        "correct": "Sunan Kalijaga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3974482566581,
+          -7.829217541540672
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 16,
+        "nama": "Makam Panembahan Senopati",
+        "kategori": "heritage",
+        "narasi": "",
+        "reward": 20,
+        "question": "Panembahan Senopati dikenal sebagai...",
+        "option1": "Pendiri Kesultanan Mataram",
+        "option2": "Raja Majapahit",
+        "option3": "Gubernur Yogyakarta",
+        "option4": "Pendiri VOC",
+        "correct": "Pendiri Kesultanan Mataram"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.397754430537,
+          -7.829305283179143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 17,
+        "nama": "Base Artisan Kotagede",
+        "kategori": "heritage",
+        "narasi": "",
+        "reward": 20,
+        "question": "Tempat ini menjadi wadah bagi para...",
+        "option1": "Pengrajin lokal",
+        "option2": "Nelayan",
+        "option3": "Petani",
+        "option4": "Supir bus",
+        "correct": "Pengrajin lokal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3963556857803,
+          -7.828921530451095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 18,
+        "nama": "Lawang Ijo",
+        "kategori": "heritage",
+        "narasi": "",
+        "reward": 20,
+        "question": "Nama 'Lawang Ijo' berasal dari...",
+        "option1": "Pintu berwarna hijau",
+        "option2": "Atap hijau",
+        "option3": "Pohon hijau",
+        "option4": "Sungai hijau",
+        "correct": "Pintu berwarna hijau"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3964982705208,
+          -7.827934111210774
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 19,
+        "nama": "Batik Pletot",
+        "kategori": "heritage",
+        "narasi": "",
+        "reward": 20,
+        "question": "Di lokasi ini pengunjung dapat mengikuti kegiatan...",
+        "option1": "Membatik",
+        "option2": "Menyelam",
+        "option3": "Memancing",
+        "option4": "Bermain golf",
+        "correct": "Membatik"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3954377543341,
+          -7.826369765701877
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 20,
+        "nama": "Taman Legawong",
+        "kategori": "heritage",
+        "narasi": "",
+        "reward": 20,
+        "question": "Taman Legawong merupakan ruang...",
+        "option1": "Terbuka untuk masyarakat",
+        "option2": "Parkir bus",
+        "option3": "Bandara",
+        "option4": "Pelabuhan",
+        "correct": "Terbuka untuk masyarakat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3936869448434,
+          -7.824341899334226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 21,
+        "nama": "Langgar Dhuwur Boharen",
+        "kategori": "religi",
+        "narasi": "",
+        "reward": 20,
+        "question": "Langgar Dhuwur Boharen merupakan bangunan yang digunakan untuk...",
+        "option1": "Beribadah",
+        "option2": "Berdagang",
+        "option3": "Menyimpan hasil panen",
+        "option4": "Pertunjukan seni",
+        "correct": "Beribadah"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.4014273706624,
+          -7.82929232317192
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 22,
+        "nama": "Toegoe Patjak Soedji",
+        "kategori": "heritage",
+        "narasi": "",
+        "reward": 20,
+        "question": "Tugu ini menjadi salah satu penanda kawasan...",
+        "option1": "Kotagede",
+        "option2": "Malioboro",
+        "option3": "Kraton",
+        "option4": "Tugu Yogyakarta",
+        "correct": "Kotagede"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.4002155550674,
+          -7.827883756596477
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 23,
+        "nama": "Peni Kotagede Swalayan",
+        "kategori": "kuliner",
+        "narasi": "",
+        "reward": 20,
+        "question": "Di kawasan Kotagede, wisatawan sering membeli oleh-oleh berupa...",
+        "option1": "Kipo",
+        "option2": "Gudeg Kaleng",
+        "option3": "Bakpia Pathok",
+        "option4": "Wingko Babat",
+        "correct": "Kipo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.399369444248,
+          -7.828088804175014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 24,
+        "nama": "Foto Baju Adat Kotagede Nareswara",
+        "kategori": "heritage",
+        "narasi": "",
+        "reward": 20,
+        "question": "Tempat ini menawarkan pengalaman...",
+        "option1": "Berfoto dengan busana adat Jawa",
+        "option2": "Membuat keris",
+        "option3": "Belajar membatik",
+        "option4": "Menonton wayang",
+        "correct": "Berfoto dengan busana adat Jawa"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3986955646718,
+          -7.829524147141528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 25,
+        "nama": "Kampung Wisata Prenggan",
+        "kategori": "heritage",
+        "narasi": "",
+        "reward": 20,
+        "question": "Kampung Wisata Prenggan dikenal sebagai kawasan yang masih mempertahankan...",
+        "option1": "Budaya dan arsitektur tradisional",
+        "option2": "Gedung pencakar langit",
+        "option3": "Pusat industri modern",
+        "option4": "Bandara internasional",
+        "correct": "Budaya dan arsitektur tradisional"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.3918279142389,
+          -7.826490436087059
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 26,
+        "nama": "Pendopo Omah Moeljo Alas Mentaok ",
+        "kategori": "heritage",
+        "narasi": "Pendopo Omah Moeljo Alas Mentaok merupakan lokasi Sanggar Gamelan Nanonano, yang dikelola oleh warga sekitar untuk melestarikan musik tradisional Jawa. Di sini, pengunjung dapat mengenal berbagai alat musik gamelan, seperti gong, kendang, kenong, bonang, saron, dan gender. Gamelan dimainkan secara bersama-sama sebagai satu kesatuan dengan tangga nada sléndro dan pélog.",
+        "reward": 20,
+        "question": "Apa nama sanggar gamelan yang terdapat di Pendopo Omah Moeljo Alas Mentaok…",
+        "option1": "Sanggar Gamelan Mataram",
+        "option2": "Sanggar Gamelan Kotagede",
+        "option3": "Sanggar Gamelan Alas Mentaok",
+        "option4": "Sanggar Gamelan Nanonano",
+        "correct": "Sanggar Gamelan Nanonano"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.399880648167,
+          -7.83008386787047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 27,
+        "nama": "Roemah Indisch Kotagede",
+        "kategori": "heritage",
+        "narasi": "Omah Indhise merupakan salah satu rumah tua di Gang Soka, Jagalan, Kotagede yang diperkirakan telah berdiri sejak tahun 1860-an. Rumah ini menjadi salah satu jejak permukiman lama Kotagede. Masyarakat juga mengenalnya sebagai “Rumah Pocong Sumi” karena cerita mistis yang berkembang di sekitarnya. Namun, kisah tersebut merupakan folklor atau cerita masyarakat, bukan fakta sejarah yang telah terbukti.",
+        "reward": 20,
+        "question": "Omah Indhise diperkirakan telah berdiri sejak tahun berapa…",
+        "option1": "1720-an",
+        "option2": "1800-an",
+        "option3": "1860-an",
+        "option4": "1920-an",
+        "correct": "1860-an"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.400507862554,
+          -7.82760181365687
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 28,
+        "nama": "Omah Pesik",
+        "kategori": "heritage",
+        "narasi": "Omah Pesik merupakan salah satu rumah tua di kawasan Kotagede yang memiliki karakter arsitektur Rumah Kalang. Bangunannya memadukan unsur arsitektur Jawa dengan pengaruh Eropa, seperti ornamen yang kaya, jendela besar, dan bangunan berukuran luas. Rumah Kalang juga menjadi simbol kemakmuran dan status sosial masyarakat Kalang yang dikenal aktif dalam perdagangan. Omah Pesik juga pernah menjadi tempat menginap Lech Wałęsa, tokoh Polandia dan penerima Nobel Perdamaian.",
+        "reward": 20,
+        "question": "Apa yang menjadi ciri khas arsitektur Omah Pesik…",
+        "option1": "Hanya menggunakan arsitektur tradisional Jawa",
+        "option2": "Memadukan unsur arsitektur Jawa dan Eropa",
+        "option3": "Menggunakan gaya arsitektur modern minimalis",
+        "option4": "Berbentuk bangunan tanpa ornamen",
+        "correct": "Memadukan unsur arsitektur Jawa dan Eropa"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.396628912294,
+          -7.82813086012261
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 29,
+        "nama": "Perak Pak Darwin",
+        "kategori": "kuliner",
+        "narasi": "Kotagede telah dikenal sebagai pusat kerajinan perak sejak era Kerajaan Mataram Islam pada abad ke-16. Kerajinan perak berkembang pesat pada masa Sultan Agung dan digunakan untuk membuat berbagai perhiasan serta perlengkapan kerajaan. Salah satu teknik khas yang digunakan adalah filigree, yaitu teknik membentuk motif rumit menggunakan anyaman kawat perak tipis. Proses pembuatan kerajinan perak meliputi pemilihan bahan, peleburan, penggilingan dan pembentukan, hingga pengelasan serta penyelesaian.",
+        "reward": 20,
+        "question": "Apa yang dimaksud dengan teknik filigree dalam pembuatan kerajinan perak…",
+        "option1": "Teknik mencetak perak menggunakan cetakan batu",
+        "option2": "Teknik menganyam kawat perak tipis untuk membentuk motif rumit",
+        "option3": "Teknik mengecat perak dengan warna tertentu",
+        "option4": "Teknik mengukir perak menggunakan mesin",
+        "correct": "Teknik menganyam kawat perak tipis untuk membentuk motif rumit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.399130580962,
+          -7.82894920830301
+        ]
+      }
+    }
+  ]
 }
