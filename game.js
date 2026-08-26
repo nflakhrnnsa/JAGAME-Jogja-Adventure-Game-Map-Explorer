@@ -527,22 +527,20 @@ function markerClicked(marker){
     )
 
     .setContent(
+    `
+    <div style="text-align:center; max-width:240px;">
 
-        `
+        <h3>${p.nama}</h3>
 
-        <div style="text-align:center">
+        <p>${p.kategori}</p>
 
-            <h3>${p.nama}</h3>
+        ${p.narasi ? `<p style="font-size:13px; text-align:left; margin:6px 0; max-height:100px; overflow-y:auto;">${p.narasi}</p>` : ""}
 
-            <p>${p.kategori}</p>
+        <b>Reward ${p.reward} Coin</b>
 
-            <b>Reward ${p.reward} Coin</b>
-
-        </div>
-
-        `
-
-    )
+    </div>
+    `
+)
 
     .openOn(APP.map);
 
