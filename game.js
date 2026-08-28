@@ -110,6 +110,8 @@ const APP = {
 
     userLocation: null,
 
+    lastRouteLocation: null,
+
     watchID: null,
 
     nearestFeature: null,
@@ -700,15 +702,49 @@ function updateUserLocation(position){
       // Update rute jika sedang bernavigasi
         if(APP.targetFeature){
 
-    showRoute(
-        L.latLng(
-            APP.targetFeature.geometry.coordinates[1],
-            APP.targetFeature.geometry.coordinates[0]
-        )
+    const currentLocation = L.latLng(
+        APP.userLocation.lat,
+        APP.userLocation.lng
     );
 
-}
+    let shouldUpdateRoute = false;
 
+    if(!APP.lastRouteLocation){
+
+        shouldUpdateRoute = true;
+
+    }
+    else{
+
+        const movedDistance =
+            currentLocation.distanceTo(
+                APP.lastRouteLocation
+            );
+
+        // Update rute kalau sudah bergerak minimal 10 meter
+        if(movedDistance >= 10){
+
+            shouldUpdateRoute = true;
+
+        }
+
+    }
+
+    if(shouldUpdateRoute){
+
+        APP.lastRouteLocation =
+            currentLocation;
+
+        showRoute(
+            L.latLng(
+                APP.targetFeature.geometry.coordinates[1],
+                APP.targetFeature.geometry.coordinates[0]
+            )
+        );
+
+    }
+
+}
      // Update gameplay
     findNearestMarker();
 
@@ -1224,64 +1260,156 @@ estimateTime.textContent =
                 SHOW ROUTE
 ==========================================================*/
 
-async function showRoute(destination){
- if(APP.isRouting) return;
+async function showRoute(destination) {
 
-    APP.isRouting = true;
-
-    if(!APP.userLocation){
-        alert("Lokasi Anda belum terdeteksi.");
+    if (!APP.userLocation) {
+        console.log("Lokasi user belum tersedia.");
         return;
     }
 
-    // hapus rute lama
-    if(APP.routingControl){
-        APP.map.removeLayer(APP.routingControl);
-        APP.routingControl = null;
+    if (APP.isRouting) {
+        return;
     }
 
-    try{
+    APP.isRouting = true;
+
+    // Hapus rute sebelumnya
+    if (APP.routingControl) {
+
+        APP.map.removeLayer(APP.routingControl);
+
+        APP.routingControl = null;
+
+    }
+
+    try {
+
+        const url =
+            "https://api.heigit.org/openrouteservice/v2/directions/foot-walking/geojson";
+
+        const coordinates = [
+
+            [
+                Number(APP.userLocation.lng),
+                Number(APP.userLocation.lat)
+            ],
+
+            [
+                Number(destination.lng),
+                Number(destination.lat)
+            ]
+
+        ];
+
+        console.log("🚶 Meminta rute...");
+        console.log("Start:", coordinates[0]);
+        console.log("Destination:", coordinates[1]);
 
         const response = await fetch(
-            "https://api.openrouteservice.org/v2/directions/foot-walking/geojson",
+
+            url,
+
             {
-                method:"POST",
-                headers:{
+
+                method: "POST",
+
+                headers: {
+
                     "Authorization": ORS_API_KEY,
-                    "Content-Type":"application/json"
+
+                    "Content-Type": "application/json",
+
+                    "Accept": "application/geo+json"
+
                 },
-                body:JSON.stringify({
-                    coordinates:[
-                        [
-                            APP.userLocation.lng,
-                            APP.userLocation.lat
-                        ],
-                        [
-                            destination.lng,
-                            destination.lat
-                        ]
-                    ]
+
+                body: JSON.stringify({
+
+                    coordinates: coordinates
+
                 })
+
             }
+
         );
 
-        const data = await response.json();
+        console.log(
+            "ORS Status:",
+            response.status
+        );
 
-        APP.isRouting = false;
+        if (!response.ok) {
 
-        APP.routingControl = L.geoJSON(data,{
-            style:{
-                color:"#2E86FF",
-                weight:6,
-                opacity:0.9
+            const errorText =
+                await response.text();
+
+            console.error(
+                "ORS Error:",
+                errorText
+            );
+
+            throw new Error(
+                `ORS ${response.status}: ${errorText}`
+            );
+
+        }
+
+        const data =
+            await response.json();
+
+        console.log(
+            "✅ Rute berhasil diterima!"
+        );
+
+        // Tampilkan rute
+        APP.routingControl =
+            L.geoJSON(
+
+                data,
+
+                {
+
+                    style: {
+
+                        color: "#2E86FF",
+
+                        weight: 6,
+
+                        opacity: 0.9
+
+                    }
+
+                }
+
+            ).addTo(APP.map);
+
+
+        // Zoom agar seluruh rute terlihat
+        APP.map.fitBounds(
+            APP.routingControl.getBounds(),
+            {
+
+                padding: [50, 50]
+
             }
-        }).addTo(APP.map);
+
+        );
 
     }
-    catch(err){
+
+    catch (error) {
+
+        console.error(
+            "❌ Route error:",
+            error
+        );
+
+    }
+
+    finally {
+
         APP.isRouting = false;
-        console.error(err);
-        alert("Gagal mengambil rute.");
+
     }
 
 }
